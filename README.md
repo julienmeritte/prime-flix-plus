@@ -1,4 +1,5 @@
-# Projet en collaboration avec Quentin Vignan https://github.com/QuentinVignan
+# Projet en collaboration avec Quentin Vignan
+https://github.com/QuentinVignan
 
 PrimeFlixPlus est un projet expérimental de plateforme de streaming, son but étant de
 réussir à développer une Application web servie par ReactJS et alimentée par Spring
