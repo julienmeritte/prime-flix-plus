@@ -1,0 +1,12 @@
+@import "assets/main.scss";
+
+.footer-container {
+  height: $footer-height;
+  background-color: $fond-pfp;
+  margin-top: auto;
+  width: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}

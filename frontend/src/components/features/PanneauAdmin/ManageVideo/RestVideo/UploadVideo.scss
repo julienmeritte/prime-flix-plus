@@ -1,0 +1,49 @@
+.upload-video-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  h3 {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.upload-form {
+  width: 500px;
+}
+
+
+.form-style-video-upload{
+  height: 1250px;
+  width: 50%;
+  background-color: rgba(255,255,255,0.13);
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 75%;
+  margin-top: 5%;
+  left: 50%;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255,255,255,0.1);
+  box-shadow: 0 0 40px rgba(8,7,16,0.6);
+  padding: 50px 35px;
+  text-align: center;
+}
+
+.form-style-video-modifier{
+  height: 85%;
+  width: 50%;
+  background-color: rgba(255,255,255,0.13);
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 60%;
+  left: 50%;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255,255,255,0.1);
+  box-shadow: 0 0 40px rgba(8,7,16,0.6);
+  padding: 50px 35px;
+  text-align: center;
+}

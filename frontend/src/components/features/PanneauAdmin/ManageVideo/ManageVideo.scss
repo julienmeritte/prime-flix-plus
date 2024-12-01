@@ -1,0 +1,57 @@
+.manage-video-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.video-details {
+  border: 1px solid blue;
+  width: 200px;
+}
+
+.input-style-grp {
+  display: block;
+  height: 50px;
+  width: 150px;
+  background-color: rgba(1, 69, 255, 0.521);
+  border-radius: 3px;
+  padding: 0 10px;
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 300;
+}
+::placeholder {
+  color: #e5e5e5;
+}
+
+.grp-style {
+  width: 170px;
+  height: 195px;
+  background-color: rgba(255, 255, 255, 0.13);
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+  padding: 20px 35px;
+  margin: 5px;
+}
+
+.video-style {
+  width: 210px;
+  height: 240px;
+  background-color: rgba(255, 255, 255, 0.13);
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+  padding: 20px 35px;
+}
+
+.custom-button-creer-groupe {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}

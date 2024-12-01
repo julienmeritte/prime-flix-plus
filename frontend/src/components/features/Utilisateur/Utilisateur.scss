@@ -1,0 +1,25 @@
+.user-profile {
+  display: flex;
+  width: 70%;
+  flex-wrap: wrap;
+  justify-items: center;
+
+  div {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: center;
+    place-content: center;
+
+    p {
+      width: 100%;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 20px;
+    }
+  }
+
+  Button {
+    width: 50%;
+  }
+}

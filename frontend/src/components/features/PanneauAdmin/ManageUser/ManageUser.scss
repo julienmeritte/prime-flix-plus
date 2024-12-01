@@ -1,0 +1,92 @@
+.user-list-entry {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 50%;
+  justify-content: center;
+
+  p {
+    margin-right: 8px;
+  }
+}
+
+
+.form-style-user{
+  height: 75%;
+  width: 75%;
+  background-color: rgba(255,255,255,0.13);
+  position: absolute;
+  transform: translate(-50%,-50%);
+  margin-top: 5%;
+  top: 50%;
+  left: 50%;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255,255,255,0.1);
+  box-shadow: 0 0 40px rgba(8,7,16,0.6);
+  padding: 50px 35px;
+}
+
+.head-style {
+  text-align: center;
+}
+
+.div-table {
+  display: inline-block;
+  height: 20em;
+  overflow-y: scroll;
+  width: 100%;
+}
+
+.table-style {
+  position: sticky;
+  top: 0;
+  border-collapse: collapse;
+  width: 95%;
+  height: 800px;
+  margin: 10px;
+  overflow: scroll;
+}
+
+.th-style , .td-style {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.tr-style:hover {
+  background-color: rgb(107, 188, 255);
+}
+
+.form-style-modify-user {
+  text-align: center;
+}
+
+.input-style-modify-user{
+  height: 50px;
+  width: 25%;
+  background-color: rgba(255,255,255,0.07);
+  border-radius: 3px;
+  padding: 0 10px;
+  margin: 8px;
+  font-size: 14px;
+  font-weight: 300;
+}
+::placeholder{
+  color: #e5e5e5;
+}
+
+
+.input-style-checkbox-modify-user{
+  height: 15px;
+  width: 20%;
+  background-color: rgba(255,255,255,0.07);
+  border-radius: 3px;
+  margin: 8px;
+  font-size: 14px;
+  font-weight: 300;
+  text-align: center;
+}
+::placeholder{
+  color: #e5e5e5;
+}

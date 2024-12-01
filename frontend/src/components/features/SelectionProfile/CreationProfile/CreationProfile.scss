@@ -1,0 +1,82 @@
+@import "assets/main.scss";
+
+.creation-profile-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.form-creation-profil {
+  width: 50%;
+  text-align: center;
+}
+
+.selection-image {
+  height: 200px;
+  width: 100%;
+  display: flex;
+  overflow: auto;
+}
+
+.title-form {
+  text-align: center;
+}
+
+.profile-image {
+  position: relative;
+  width: 150px;
+  height: 150px;
+
+  img {
+    width: inherit;
+    height: inherit;
+  }
+}
+
+.profile-image-superposition {
+  position: absolute;
+  top: 35px;
+  left: 35px;
+  max-width: 80px;
+  max-height: 80px;
+  opacity: 0.7;
+}
+
+.profile-creation-style {
+  height: 600px;
+  width: 1000px;
+  background-color: rgba(255, 255, 255, 0.13);
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+  padding: 50px 35px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(129, 2, 2);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #680202;
+}

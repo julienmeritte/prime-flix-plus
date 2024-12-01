@@ -1,0 +1,77 @@
+version: '3'
+
+services:
+  front:
+      build: ./frontend
+      ports:
+        - "3000:3000"
+      expose:
+        - 3000
+      volumes:
+        - /app/node_modules
+        - ./frontend:/app/
+      networks:
+        idv-web:
+
+  
+  api:
+      build:
+        context: ./
+        dockerfile: ./backend/Dockerfile
+      command: bash -c "mvn clean install && java -jar target/prime-flix-plus-backend-0.0.1-SNAPSHOT.jar"
+      ports:
+        - "8080:8080"
+      restart: always
+      expose:
+        - 8080
+      depends_on:
+        - mysql
+      environment:
+        SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/primeflixplus
+        SPRING_DATASOURCE_USERNAME: root
+        SPRING_DATASOURCE_PASSWORD: root
+        SPRING_JPA_HIBERNATE_DDL_AUTO: create-drop
+      networks:
+        idv-web:
+
+  encoder:
+      build:
+        context: ./
+        dockerfile: ./encoder/Dockerfile
+      command: bash -c "mvn clean install && java -jar target/prime-flix-plus-encoder-0.0.1-SNAPSHOT.jar"
+      ports:
+        - "8081:8081"
+      restart: always
+      expose:
+        - 8081
+      depends_on:
+        - api
+      networks:
+        idv-web:
+
+  mysql:
+      image: mysql:8.0.25
+      restart: always
+      ports:
+          - "3306:3306"
+      expose:
+          - 3306
+      environment:
+        MYSQL_ROOT_PASSWORD: root
+        MYSQL_DATABASE: primeflixplus
+      volumes:
+        - mysqlData:/var/lib/mysql
+      networks:
+        idv-web:
+
+
+volumes:
+  mysqlData:
+
+
+networks: 
+  idv-web:
+        ipam:
+            driver: default
+            config:
+                - subnet: 172.18.0.0/16

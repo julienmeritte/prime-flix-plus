@@ -1,0 +1,28 @@
+{
+  "properties": [
+    {
+      "name": "primeflix.encoder.address",
+      "type": "java.lang.String",
+      "description": "Address for Encoder."
+    },
+    {
+      "name": "primeflix.backend.address",
+      "type": "java.lang.String",
+      "description": "Address for Backend."
+    },
+    {
+      "name": "primeflix.frontend.address",
+      "type": "java.lang.String",
+      "description": "Address for Frontend."
+    },
+    {
+      "name": "primeflix.static",
+      "type": "java.lang.String",
+      "description": "Description for primeflix.static."
+    },
+    {
+      "name": "primeflix.images",
+      "type": "java.lang.String",
+      "description": "Description for primeflix.images."
+    }
+  ] }

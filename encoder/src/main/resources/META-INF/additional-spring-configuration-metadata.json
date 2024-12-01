@@ -1,0 +1,13 @@
+{
+  "properties": [
+    {
+      "name": "primeflix.backend.address",
+      "type": "java.lang.String",
+      "description": "Backend address."
+    },
+    {
+      "name": "primeflix.static",
+      "type": "java.lang.String",
+      "description": "Description for primeflix.static."
+    }
+  ] }

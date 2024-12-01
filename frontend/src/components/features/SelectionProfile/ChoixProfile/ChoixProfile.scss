@@ -1,0 +1,37 @@
+@import "assets/main.scss";
+
+.selection-profil-container {
+  width: inherit;
+  min-height: inherit;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-profile-bloc {
+  display: flex;
+  flex-wrap: wrap;
+  width: 150px;
+  justify-content: center;
+  border: 1px blue solid;
+  margin-right: 10px;
+  margin-top: 0%;
+}
+
+
+.image-plus {
+  width: 130px;
+  height: 130px;
+}
+
+.profile-style{
+  width: 210px;
+  height: 240px;
+  background-color: rgba(255,255,255,0.13);
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255,255,255,0.1);
+  box-shadow: 0 0 40px rgba(8,7,16,0.6);
+  padding: 20px 35px;
+}
